@@ -13,7 +13,7 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('_products__tabel')->insert([
+        DB::table('products')->insert([
            [
             "name"=> 'Samsung S9',
             "price"=> '2000',
