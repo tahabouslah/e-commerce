@@ -10,11 +10,13 @@
             <div class="carousel-inner">
               @foreach ($products as $item)
               <div class="carousel-item {{$item['id']==1?'active':''}}" data-bs-interval="10000">
-                <img class="slider-img" src="{{$item["gallery"]}}" class="d-block w-100" alt="{{$item["name"]}}">
+                <a href="detail/{{$item["id"]}}">
+                  <img class="slider-img" src="{{$item["gallery"]}}" class="d-block w-100" alt="{{$item["name"]}}">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>{{$item["name"]}}</h5>
                   <p>{{$item["description"]}}</p>
                 </div>
+                </a>
               </div>
               @endforeach
             </div>

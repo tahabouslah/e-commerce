@@ -11,4 +11,9 @@ class ProductController extends Controller
         $data = product::all();
         return view("product", ['products' => $data]);
     }
+
+    public function detail($id){
+        $dt = Product::find($id);
+        return view("details", ["product"=>$dt]);
+    }
 }
