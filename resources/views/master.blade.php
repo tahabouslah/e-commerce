@@ -25,5 +25,18 @@
         .custom-product {
             height: 800px;
         }
+        .search-box {
+            width: 400px !important
+        }
+        .trending-image {
+            height: 100px;
+        }
+        .trending-wrapper {
+            margin: 30px;
+        }
+        .trending-item {
+            float: left;
+            width: 20%
+        }
     </style>
 </html>
